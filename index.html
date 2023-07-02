@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ENTREGA FINAL CODER JAVASCRIPT</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body class="bodyindex">
+
+ 
+  
+  <header> 
+  </header>
+    
+  <div class="titulo">
+      INVENTARIO PARA CONTROL
+  </div>
+ 
+  
+  <div class="formulario">
+    <h2>Agregar aire acondicionado</h2>
+
+    <label for="capacidad">Capacidad en frigorías:</label>
+    <input type="number" id="capacidad">
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio">
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad">
+    
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca">
+
+    <label for="fecha">Fecha de ingreso al inventario: </label> 
+    <input type="date" id="fecha"> 
+    
+    <button id="agregarboton">Agregar al inventario</button>
+  </div>
+
+  <div class="filtrocapacidad">
+    <div>Filtrar por capacidad</div>
+    <input type="number" id="filtrocapacidad" placeholder="Filtrar por capacidad">
+  </div>  
+
+  <div class="filtromarca">
+    <div>Filtrar por marca</div>
+    <input type="text" id="filtromarca" placeholder="Filtrar por marca">
+  </div>
+  
+  <div class="muestrainventario">
+    <table id="tablainventario" class="centrarinventario">
+      <thead>
+        <tr>
+          <th>Capacidad (frigorias)</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Marca</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody id="itemsinventario"></tbody>
+    </table>
+  </div>
+
+  <div class="exportar">
+    <button id="exportarinventario">EXPORTAR INVENTARIO</button>
+  </div>
+  
+  <div class="borrar">
+    <button id="borrarlocal">BORRAR INVENTARIO</button>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
